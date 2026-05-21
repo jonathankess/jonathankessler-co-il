@@ -1,0 +1,17 @@
+---
+const links = [
+  { href: '/', label: 'בית' },
+  { href: '/blog', label: 'בלוג' },
+  { href: '/hebrew', label: 'עברית' },
+  { href: '/now', label: 'מה עכשיו' },
+  { href: '/about', label: 'אודות' },
+];
+---
+<header class="site-header">
+  <div class="wrap">
+    <a href="/" class="brand">יונתן קסלר</a>
+    <nav class="nav">
+      {links.map((l) => <a href={l.href}>{l.label}</a>)}
+    </nav>
+  </div>
+</header>

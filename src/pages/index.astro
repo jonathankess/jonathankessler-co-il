@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="יונתן קסלר"
+  description="יונתן קסלר — תרבות, שפה ומקום. כתיבה על איך שפה מעצבת את האופן שבו אנחנו רואים את העולם."
+>
+  <section class="hero">
+    <h1>יונתן קסלר</h1>
+    <p class="lead">תרבות, שפה ומקום — והדרך שבה הם משנים את מה שאנחנו רואים.</p>
+    <p>
+      (טקסט זמני.) כאן אני כותב על איך שפה מעצבת תפיסת מציאות, מה עיר באמת עשויה
+      ממנו, ומה לומדים דווקא מתוך זרות. בקרוב יתווסף כאן גם מדריך פריז.
+    </p>
+    <p>
+      <a href="/blog">לקריאה בבלוג ←</a>
+    </p>
+  </section>
+
+  <section class="signup">
+    <h2>רוצים להישאר מעודכנים?</h2>
+    <p>השאירו אימייל ואעדכן כשיוצא תוכן חדש ומדריך פריז.</p>
+    <!-- TODO: connect to email provider (MailerLite / Buttondown) once chosen -->
+    <form action="#" method="post">
+      <input type="email" name="email" placeholder="האימייל שלכם" required aria-label="כתובת אימייל" />
+      <button type="submit">הרשמה</button>
+    </form>
+  </section>
+</BaseLayout>

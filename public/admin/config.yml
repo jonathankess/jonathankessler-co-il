@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: jonathankess/jonathankessler-co-il
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+locale: he
+
+collections:
+  - name: blog
+    label: בלוג
+    label_singular: פוסט
+    folder: src/content/blog
+    create: true
+    slug: '{{slug}}'
+    extension: md
+    format: frontmatter
+    fields:
+      - { name: title, label: כותרת, widget: string }
+      - { name: description, label: תיאור קצר, widget: text }
+      - { name: pubDate, label: תאריך פרסום, widget: datetime, picker_utc: false, format: 'YYYY-MM-DD' }
+      - { name: draft, label: טיוטה, widget: boolean, default: false }
+      - { name: body, label: תוכן, widget: markdown }
