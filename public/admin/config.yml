@@ -2,7 +2,7 @@ backend:
   name: github
   repo: jonathankess/jonathankessler-co-il
   branch: main
-  base_url: https://www.jonathankessler.co.il
+  base_url: https://jonathankessler.co.il
   auth_endpoint: api/auth
 
 media_folder: public/uploads
