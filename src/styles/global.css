@@ -5,8 +5,8 @@
   --bg: #faf8f4;
   --accent: #9a3b2e;
   --max: 44rem;
-  --font-body: 'Assistant', system-ui, sans-serif;
-  --font-head: 'Frank Ruhl Libre', Georgia, serif;
+  --font-body: 'Heebo', system-ui, sans-serif;
+  --font-head: 'Heebo', system-ui, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -33,7 +33,7 @@ body {
 
 h1, h2, h3 {
   font-family: var(--font-head);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.25;
   margin: 0 0 0.6em;
 }
